@@ -1,0 +1,77 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Projei yaparken chat ekranında bana çok detaylı anlatma kısa ve net ol.
+türkçe cevapler ver.
+kullanıcı dostu olmasını sakın unutma.
+gerekli tüm işlemleri yap.
+geçerli dosyada tüm projeyi oluştur.
+Frontend: React.js + Tailwind CSS
+
+Backend: Node.js 
+
+Veritabanı: MongoDB
+
+Kimlik Doğrulama: JWT + Bcrypt
+
+Dosya Depolama: Firebase Storage
+
+Deployment: Netlify (Frontend) + Heroku/AWS (Backend)
+# Eğitim Platformu (Öğretmen ve Öğrenci Portalı)
+
+Bu platform, öğretmenlerin video ve PDF içeriklerini yükleyip, öğrencilere özgü içerikleri sunmalarını sağlayan bir eğitim sistemi geliştirmeyi amaçlar. Öğrenciler sadece kendilerine atanmış içeriklere erişebilecekken, öğretmenler içerikleri kolayca yönetebileceklerdir.
+
+## Öğretmen Girişi
+
+### 1. Login Sayfası
+- Kullanıcı adı ve şifre ile öğretmen girişi yapılacak.
+
+### 2. Ana Sayfa (Öğretmen Paneli)
+- **Öğrenci Yönetimi**: Öğretmenler öğrenci ekleyip silebilecek.
+- **Kurslarım Sayfası**:
+  - **Video Yükleme ve Silme**: Öğretmen, kurs videosu yükleyebilir veya silebilir.
+  - **Öğrencilere Video Atama**: Öğretmen, yüklediği videolara hangi öğrencilerin erişebileceğini seçebilir. Öğrenci seçme işlemi, video altında bir liste şeklinde yapılacak ve her öğrenciye tik atılacak.
+- **PDF Yükleme**: Öğretmen, dersle ilgili PDF dosyalarını yükleyebilecek. PDF için isim, konu ve ders içeriği seçilecek.
+
+### 3. Kurslarım Sayfası İşleyişi
+- **Video ve PDF İçeriği Yükleme**: Öğretmen, her video ve PDF için başlık, konu ve içerik bilgilerini girerek içeriği sisteme yükleyecek.
+
+### 4. Öğrenci Atama
+- Öğretmen, yüklediği videoların ve PDF'lerin hangi öğrencilere sunulacağını belirleyecek ve bu atamalar öğrenci girişinde aktif hale gelecek.
+
+---
+
+## Öğrenci Girişi
+
+### 1. Login Sayfası
+- Öğrenciler, kendi ID ve şifreleri ile giriş yapacaklar.
+
+### 2. Ana Sayfa (Öğrenci Paneli)
+- **Kurslarım Sayfası**: 
+  - Öğrenci, öğretmen tarafından atanan video içeriklerine erişebilecek.
+  - Görüntüleme için aktif olan videolar, öğrenciye özel olarak sunulacak.
+- **PDF Sayfası**:
+  - Öğrenci, öğretmenin yüklediği PDF dosyalarını görebilecek.
+
+### 3. İçerik Filtreleme ve Görüntüleme
+- Öğrencinin görebileceği içerikler sadece öğretmen tarafından atanan içeriklerle sınırlı olacak. Öğrenci, video ve PDF içeriklerini, ders içeriğine göre filtrelenmiş olarak görecek.
+
+---
+
+## Teknik Özellikler
+
+- **Veritabanı**: Kullanıcı bilgileri, videolar, PDF dosyaları ve öğrenci-atama ilişkileri için veritabanı kullanılacak.
+- **Erişim Kontrolü**: Öğrenciler yalnızca kendilerine atanmış içeriklere erişebilecekler.
+- **Video İzleme**: Videolar yalnızca ilgili öğrencilere sunulacak.
+- **PDF Görüntüleme**: PDF'ler öğretmenler tarafından yüklendikten sonra öğrencilere atanacak.
+- **Kullanıcı Arayüzü**: Hem öğretmenler hem de öğrenciler için basit ve kullanıcı dostu bir arayüz sağlanacak.
+
+---
+
+## Ekstra Özellikler
+
+- **Bildirim Sistemi**: Öğrenciler yeni video veya PDF yüklendiğinde bildirim alabilir.
+- **Kurs İlerlemesi**: Öğrenciler, izledikleri videoları ve okudukları PDF'leri takip edebilecekler.
+- **Ders İçeriği Güncellemeleri**: Öğretmenler ders içeriklerini güncelleyebilecek ve öğrenciler yeni içeriklere anında erişebilecek.
